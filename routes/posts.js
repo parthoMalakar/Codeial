@@ -8,4 +8,4 @@ router.post('/create', passport.checkAuthentication, postController.create);
 
 
 module.exports = router;
-
+router.get('/destroy/:id', passport.checkAuthentication, postController.destroy);
